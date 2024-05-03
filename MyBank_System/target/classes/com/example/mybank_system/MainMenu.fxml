@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mybank_system.MainMenu">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="652.0" layoutX="-12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="withdraw" layoutX="126.0" layoutY="110.0" mnemonicParsing="false" onAction="#WithdrawClk" prefHeight="37.0" prefWidth="138.0" style="-fx-background-color: lightblue;" text="Withdraw">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Sendmoney" layoutX="340.0" layoutY="110.0" mnemonicParsing="false" onAction="#SendMoneyClk" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: lightblue;" text="Send money">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="language" layoutX="116.0" layoutY="245.0" mnemonicParsing="false" onAction="#LanguageClk" prefHeight="37.0" prefWidth="145.0" style="-fx-background-color: lightblue;" text="Language">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Changepin" layoutX="340.0" layoutY="245.0" mnemonicParsing="false" onAction="#ChangepinClk" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: lightblue;" text="Change pin">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="226.0" layoutY="14.0" prefHeight="45.0" prefWidth="178.0" text="Main Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="LogOut" layoutX="244.0" layoutY="313.0" mnemonicParsing="false" onAction="#LogOutClk" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: lightblue;" text="Log out">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
